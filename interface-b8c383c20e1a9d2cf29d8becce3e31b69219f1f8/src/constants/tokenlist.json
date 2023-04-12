@@ -1,0 +1,26 @@
+[
+  {
+    "chainId": 280,
+    "address": "0x0000000000000000000000000000000000000000",
+    "symbol": "ETH",
+    "name": "ETH",
+    "decimals": 18,
+    "tags": ["defi"]
+  },
+  {
+    "chainId": 280,
+    "address": "0x20b28b1e4665fff290650586ad76e977eab90c5d",
+    "symbol": "WETH",
+    "name": "WETH",
+    "decimals": 18,
+    "tags": ["defi"]
+  },
+  {
+    "chainId": 280,
+    "address": "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+    "symbol": "USDC",
+    "name": "USDC",
+    "decimals": 18,
+    "tags": ["defi"]
+  }
+]
