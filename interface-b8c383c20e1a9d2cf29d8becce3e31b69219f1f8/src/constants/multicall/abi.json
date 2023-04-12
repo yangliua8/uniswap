@@ -1,32 +1,21 @@
 [
   {
-    "constant": true,
-    "inputs": [],
-    "name": "getCurrentBlockTimestamp",
-    "outputs": [
-      {
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
+    "constant": false,
     "inputs": [
       {
         "components": [
           {
+            "internalType": "address",
             "name": "target",
             "type": "address"
           },
           {
+            "internalType": "bytes",
             "name": "callData",
             "type": "bytes"
           }
         ],
+        "internalType": "struct Multicall.Call[]",
         "name": "calls",
         "type": "tuple[]"
       }
@@ -34,24 +23,33 @@
     "name": "aggregate",
     "outputs": [
       {
+        "internalType": "uint256",
         "name": "blockNumber",
         "type": "uint256"
       },
       {
+        "internalType": "bytes[]",
         "name": "returnData",
         "type": "bytes[]"
       }
     ],
     "payable": false,
-    "stateMutability": "view",
+    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "constant": true,
-    "inputs": [],
-    "name": "getLastBlockHash",
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "blockNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBlockHash",
     "outputs": [
       {
+        "internalType": "bytes32",
         "name": "blockHash",
         "type": "bytes32"
       }
@@ -62,17 +60,13 @@
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "name": "addr",
-        "type": "address"
-      }
-    ],
-    "name": "getEthBalance",
+    "inputs": [],
+    "name": "getCurrentBlockCoinbase",
     "outputs": [
       {
-        "name": "balance",
-        "type": "uint256"
+        "internalType": "address",
+        "name": "coinbase",
+        "type": "address"
       }
     ],
     "payable": false,
@@ -85,6 +79,7 @@
     "name": "getCurrentBlockDifficulty",
     "outputs": [
       {
+        "internalType": "uint256",
         "name": "difficulty",
         "type": "uint256"
       }
@@ -99,6 +94,7 @@
     "name": "getCurrentBlockGasLimit",
     "outputs": [
       {
+        "internalType": "uint256",
         "name": "gaslimit",
         "type": "uint256"
       }
@@ -110,11 +106,12 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "getCurrentBlockCoinbase",
+    "name": "getCurrentBlockTimestamp",
     "outputs": [
       {
-        "name": "coinbase",
-        "type": "address"
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
       }
     ],
     "payable": false,
@@ -125,13 +122,30 @@
     "constant": true,
     "inputs": [
       {
-        "name": "blockNumber",
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "getEthBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
         "type": "uint256"
       }
     ],
-    "name": "getBlockHash",
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getLastBlockHash",
     "outputs": [
       {
+        "internalType": "bytes32",
         "name": "blockHash",
         "type": "bytes32"
       }
