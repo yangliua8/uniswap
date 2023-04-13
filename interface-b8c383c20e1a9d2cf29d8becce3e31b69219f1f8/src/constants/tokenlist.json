@@ -1,26 +1,47 @@
-[
-  {
-    "chainId": 280,
-    "address": "0x0000000000000000000000000000000000000000",
-    "symbol": "ETH",
-    "name": "ETH",
-    "decimals": 18,
-    "tags": ["defi"]
-  },
-  {
-    "chainId": 280,
-    "address": "0x20b28b1e4665fff290650586ad76e977eab90c5d",
-    "symbol": "WETH",
-    "name": "WETH",
-    "decimals": 18,
-    "tags": ["defi"]
-  },
-  {
-    "chainId": 280,
-    "address": "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
-    "symbol": "USDC",
-    "name": "USDC",
-    "decimals": 18,
-    "tags": ["defi"]
+{
+    "name": "INEXCHANGE",
+    "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/compound-interface.svg",
+    "keywords": [
+      "ZK",
+      "defi"
+    ],
+    "timestamp": "2021-05-27T20:37:00.000+00:00",
+    "tokens": [
+      {
+        "chainId": 280,
+        "address": "0x0faF6df7054946141266420b43783387A78d82A9",
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_ZRX.svg"
+      },
+      {
+        "chainId": 280,
+        "address": "0x3e7676937A7E96CFB7616f255b9AD9FF47363D4b",
+        "name": "DAI",
+        "symbol": "DAI",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_ZRX.svg"
+      },
+      {
+        "chainId": 280,
+        "address": "0x0BfcE1D53451B4a8175DD94e6e029F7d8a701e9c",
+        "name": "wBTC",
+        "symbol": "wBTC",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_ZRX.svg"
+      },
+      {
+        "chainId": 280,
+        "address": "0x40609141Db628BeEE3BfAB8034Fc2D8278D0Cc78",
+        "symbol": "LINK",
+        "name": "LINK",
+        "decimals": 18
+      }
+    ],
+    "version": {
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    }
   }
-]

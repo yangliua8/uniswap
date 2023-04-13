@@ -1,9 +1,8 @@
 // the Uniswap Default token list lives here
-export const DEFAULT_TOKEN_LIST_URL = 'https://raw.githubusercontent.com/yangliua8/tokenlist/main/tokenlist.json';
+export const DEFAULT_TOKEN_LIST_URL = 'https://raw.githubusercontent.com/yangliua8/tokenlist/main/tokenlist.json'
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
   DEFAULT_TOKEN_LIST_URL,
-  "tokenlist.aave.eth",
-  "https://raw.githubusercontent.com/yangliua8/tokenlist/main/tokenlist.json",
-  "https://raw.githubusercontent.com/compound-finance/token-list/master/compound.tokenlist.json"
+  'tokenlist.aave.eth',
+  'https://raw.githubusercontent.com/compound-finance/token-list/master/compound.tokenlist.json'
 ]
