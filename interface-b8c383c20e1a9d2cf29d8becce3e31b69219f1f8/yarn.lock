@@ -8314,10 +8314,10 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-insswap-sdk@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/insswap-sdk/-/insswap-sdk-1.0.3.tgz#b4c29d352ef35addab3fdba4d417661bda87c60a"
-  integrity sha512-lREKiwasXD8w+kBjVpr6Or886o8X/fj1ef4wBqucxOC8VpZnyWhBC1AwOVKaeZBJYTbjH/laS8DpFI8N8Uby3w==
+insswap-sdk@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/insswap-sdk/-/insswap-sdk-1.0.5.tgz#843da4424d7e580ac8941a52d097b91994420571"
+  integrity sha512-J5sd8D3wn01gXnuY/Od98w+ZEOAnBIIxbJ6bS/z3MbNAvuykNUxDw4vNf22E+PEyq9f7at/CvT7lqNJcIep1aQ==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
@@ -15366,3 +15366,8 @@ yauzl@2.10.0, yauzl@^2.10.0:
   dependencies:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
+
+zksync-web3@^0.14.3:
+  version "0.14.3"
+  resolved "https://registry.npmmirror.com/zksync-web3/-/zksync-web3-0.14.3.tgz#64ac2a16d597464c3fc4ae07447a8007631c57c9"
+  integrity sha512-hT72th4AnqyLW1d5Jlv8N2B/qhEnl2NePK2A3org7tAa24niem/UAaHMkEvmWI3SF9waYUPtqAtjpf+yvQ9zvQ==

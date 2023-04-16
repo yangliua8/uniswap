@@ -1,4 +1,5 @@
-import { Web3Provider } from '@ethersproject/providers'
+//import { Web3Provider} from '@ethersproject/providers'
+import { Web3Provider } from 'zksync-web3'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
@@ -8,6 +9,7 @@ import { FortmaticConnector } from './Fortmatic'
 import { NetworkConnector } from './NetworkConnector'
 
 const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
+//const NETWORK_URL = 'https://testnet.era.zksync.dev'
 const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
 const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
 
@@ -20,10 +22,16 @@ if (typeof NETWORK_URL === 'undefined') {
 export const network = new NetworkConnector({
   urls: { [NETWORK_CHAIN_ID]: NETWORK_URL }
 })
-
+/*
 let networkLibrary: Web3Provider | undefined
 export function getNetworkLibrary(): Web3Provider {
   return (networkLibrary = networkLibrary ?? new Web3Provider(network.provider as any))
+}
+*/
+
+let networkLibrary: Web3Provider | undefined
+export function getNetworkLibrary(): Web3Provider {
+  return (networkLibrary = networkLibrary ?? new Web3Provider((window as any).ethereum))
 }
 
 export const injected = new InjectedConnector({

@@ -23,7 +23,7 @@ const CALL_CHUNK_SIZE = 500
  * Fetches a chunk of calls, enforcing a minimum block number constraint
  * @param multicallContract multicall contract to fetch against
  * @param chunk chunk of calls to make
- * @param minBlockNumber minimum block number of the result set
+ * @param minBlockNumber minimum block number of the result set   //callStatic
  */
 async function fetchChunk(
   multicallContract: Contract,
@@ -33,7 +33,7 @@ async function fetchChunk(
   console.debug('Fetching chunk', multicallContract, chunk, minBlockNumber)
   let resultsBlockNumber, returnData
   try {
-    ;[resultsBlockNumber, returnData] = await multicallContract.callStatic.aggregate(chunk.map(obj => [obj.address, obj.callData]))
+    ;[resultsBlockNumber, returnData] = await multicallContract.aggregate(chunk.map(obj => [obj.address, obj.callData]))
   } catch (error) {
     console.debug('Failed to fetch chunk inside retry', error)
     throw error
