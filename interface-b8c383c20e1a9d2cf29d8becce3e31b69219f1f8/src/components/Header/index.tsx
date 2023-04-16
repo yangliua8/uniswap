@@ -5,8 +5,8 @@ import { Text } from 'rebass'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/svg/logo.png'
-import LogoDark from '../../assets/svg/logo.png'
+import Logo from '../../assets/svg/logo.svg'
+import LogoDark from '../../assets/svg/logo.svg'
 import Wordmark from '../../assets/svg/word.svg'
 import WordmarkDark from '../../assets/svg/word.svg'
 import { useActiveWeb3React } from '../../hooks'
