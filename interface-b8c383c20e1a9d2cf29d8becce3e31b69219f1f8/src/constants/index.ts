@@ -1,7 +1,8 @@
 import { ChainId, JSBI, Percent, Token, WETH } from 'insswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
-import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
+import {  injected } from '../connectors'
+//import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 
 export const ROUTER_ADDRESS = '0x96c2Cf9edbEA24ce659EfBC9a6e3942b7895b5e8'
 
@@ -94,7 +95,9 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     description: 'Easy-to-use browser extension.',
     href: null,
     color: '#E8831D'
-  },
+  }
+  /*
+  ,
   WALLET_CONNECT: {
     connector: walletconnect,
     name: 'WalletConnect',
@@ -138,7 +141,7 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     href: null,
     color: '#4A6C9B',
     mobile: true
-  }
+  }*/
 }
 
 export const NetworkContextName = 'NETWORK'

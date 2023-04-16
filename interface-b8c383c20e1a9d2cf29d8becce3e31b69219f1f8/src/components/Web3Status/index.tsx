@@ -5,11 +5,12 @@ import React, { useMemo } from 'react'
 import { Activity } from 'react-feather'
 import { useTranslation } from 'react-i18next'
 import styled, { css } from 'styled-components'
-import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
-import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
-import PortisIcon from '../../assets/images/portisIcon.png'
-import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
-import { fortmatic, injected, portis, walletconnect, walletlink } from '../../connectors'
+//import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
+//import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
+//import PortisIcon from '../../assets/images/portisIcon.png'
+//import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
+//import { fortmatic, injected, portis, walletconnect, walletlink } from '../../connectors'
+import { injected } from '../../connectors'
 import { NetworkContextName } from '../../constants'
 import useENSName from '../../hooks/useENSName'
 import { useHasSocks } from '../../hooks/useSocksBalance'
@@ -25,6 +26,7 @@ import Loader from '../Loader'
 import { RowBetween } from '../Row'
 import WalletModal from '../WalletModal'
 
+/*
 const IconWrapper = styled.div<{ size?: number }>`
   ${({ theme }) => theme.flexColumnNoWrap};
   align-items: center;
@@ -33,7 +35,7 @@ const IconWrapper = styled.div<{ size?: number }>`
     height: ${({ size }) => (size ? size + 'px' : '32px')};
     width: ${({ size }) => (size ? size + 'px' : '32px')};
   }
-`
+`*/
 
 const Web3StatusGeneric = styled(ButtonSecondary)`
   ${({ theme }) => theme.flexRowNoWrap}
@@ -133,7 +135,9 @@ const SOCK = (
 function StatusIcon({ connector }: { connector: AbstractConnector }) {
   if (connector === injected) {
     return <Identicon />
-  } else if (connector === walletconnect) {
+  } 
+  /*
+  else if (connector === walletconnect) {
     return (
       <IconWrapper size={16}>
         <img src={WalletConnectIcon} alt={''} />
@@ -157,7 +161,7 @@ function StatusIcon({ connector }: { connector: AbstractConnector }) {
         <img src={PortisIcon} alt={''} />
       </IconWrapper>
     )
-  }
+  }*/
   return null
 }
 

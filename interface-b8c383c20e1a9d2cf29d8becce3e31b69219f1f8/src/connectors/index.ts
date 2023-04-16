@@ -1,17 +1,17 @@
 //import { Web3Provider} from '@ethersproject/providers'
 import { Web3Provider } from 'zksync-web3'
 import { InjectedConnector } from '@web3-react/injected-connector'
-import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
-import { WalletLinkConnector } from '@web3-react/walletlink-connector'
-import { PortisConnector } from '@web3-react/portis-connector'
+//import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
+//import { WalletLinkConnector } from '@web3-react/walletlink-connector'
+//import { PortisConnector } from '@web3-react/portis-connector'
 
-import { FortmaticConnector } from './Fortmatic'
+//import { FortmaticConnector } from './Fortmatic'
 import { NetworkConnector } from './NetworkConnector'
 
 const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
 //const NETWORK_URL = 'https://testnet.era.zksync.dev'
-const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
-const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
+//const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
+//const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
 
 export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '1')
 
@@ -32,6 +32,7 @@ export const injected = new InjectedConnector({
   supportedChainIds: [1, 3, 4, 5, 42, 280]
 })
 
+/*
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
   rpc: { 1: NETWORK_URL },
@@ -59,3 +60,4 @@ export const walletlink = new WalletLinkConnector({
   appLogoUrl:
     'https://mpng.pngfly.com/20181202/bex/kisspng-emoji-domain-unicorn-pin-badges-sticker-unicorn-tumblr-emoji-unicorn-iphoneemoji-5c046729264a77.5671679315437924251569.jpg'
 })
+*/
